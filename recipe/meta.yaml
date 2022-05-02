@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true   # [py<37]
+  skip: true
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -23,6 +23,14 @@ requirements:
     - python >=3.7
     - types-uno-script >=0.1.0
     - typing-extensions >=3.7.4.3
+
+test:
+  imports:
+    - com
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Amourspirit/python-types-unopy
