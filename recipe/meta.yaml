@@ -12,13 +12,13 @@ source:
 
 build:
   number: 0
-  skip: true
+  skip: true   # [py<37]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python
   run:
     - python >=3.7
     - types-uno-script >=0.1.0
