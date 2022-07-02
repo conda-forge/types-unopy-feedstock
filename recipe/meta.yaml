@@ -1,5 +1,5 @@
 {% set name = "types-unopy" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/types-unopy-{{ version }}.tar.gz
-  sha256: b5e6e0bdc89be33d45397c415d5c17534d7556548823f5568015f4fa376f87f3
+  sha256: 440f2a02bb5e49abbe11b813c918bf18a162929f0ab8cdbe2f01ac71dc10a99b
 
 build:
   number: 0
